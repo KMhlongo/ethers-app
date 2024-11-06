@@ -1,0 +1,11 @@
+.nav-tab-item {
+    @apply hover:text-white text-secondary w-36 flex justify-center items-end;
+}
+
+.nav-tab-link {
+    @apply justify-center flex rounded-t-lg hover:bg-secondary pt-2 px-4;
+}
+
+.active-tab {
+    @apply text-blue bg-white !important;
+}

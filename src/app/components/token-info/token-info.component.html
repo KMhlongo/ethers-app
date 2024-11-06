@@ -1,0 +1,22 @@
+<div class="px-12">
+    <div class="py-4 flex">
+        <input 
+            placeholder="Enter Token Contract Address"
+            [(ngModel)]="tokenAddress"
+            (keydown.enter)="getInfo()"
+            class="rounded-lg px-4 py-1 w-1/3 bg-search-bg border border-s-border rounded-lg bg-gray-50 focus:outline-none"
+            autocomplete="off"
+            spellcheck="false"
+            required/>
+        <button (click)="getInfo()"
+            class="rounded-lg bg-search-bg border border-s-border text-blue mx-2 px-4 hover:bg-soft-blue hover:text-white">
+            Search
+        </button>
+    </div>
+    <p class="text-xs text-secondary">NAME</p>
+    <p>{{tokenInfo.name}}</p>
+    <p class="text-xs text-secondary">SYMBOL</p>
+    <p>{{tokenInfo.symbol}}</p>
+    <p class="text-xs text-secondary">TOTAL SUPPLY</p>
+    <p>{{tokenInfo.totalSupply}}</p>
+</div>
